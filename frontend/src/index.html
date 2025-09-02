@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chotu AI</title>
+
+  <!-- Tailwind play CDN for dev. For final packaging, prebuild CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-slate-50 h-screen antialiased">
+  <div class="max-w-4xl mx-auto p-6">
+    <h1 class="text-2xl font-bold mb-4">Chotu AI — Inventory SQL Assistant</h1>
+
+    <div id="chat" class="border rounded-lg bg-white shadow p-4 h-[60vh] overflow-auto" >
+      <!-- messages will be appended here -->
+    </div>
+
+    <div class="mt-4 flex gap-2">
+      <input id="question" type="text" placeholder="Ask something like: How many packets of Maggi are left?"
+             class="flex-1 border rounded px-3 py-2 focus:outline-none" />
+      <button id="askBtn" class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">Ask</button>
+    </div>
+
+    <p class="text-sm text-gray-500 mt-3">Model runs locally — ensure backend is started. Backend URL: <code>http://127.0.0.1:8000/ask</code></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

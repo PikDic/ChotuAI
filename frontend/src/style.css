@@ -1,0 +1,7 @@
+/* style.css - small overrides */
+body { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+#chat .message { margin-bottom: 12px; }
+.message .role { font-weight: 600; margin-bottom: 4px; }
+.message .bubble { padding: 10px; border-radius: 8px; }
+.message.user .bubble { background-color: #eef2ff; }
+.message.bot .bubble { background-color: #f1f5f9; }
